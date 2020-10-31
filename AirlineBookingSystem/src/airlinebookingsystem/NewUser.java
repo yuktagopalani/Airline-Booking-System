@@ -210,7 +210,7 @@ public class NewUser extends javax.swing.JFrame {
             
             String selectQuery = "select count(*) from user_details where username='"+username+"' and password='"+password+"'";
             ResultSet rs=stat.executeQuery(selectQuery);
-            if(rs.next()){
+            if(!rs.next()){
                 infoMessage("Already registered","Welcome!!");
             }
             else{
