@@ -7,17 +7,25 @@ package airlinebookingsystem;
 
 /**
  *
- * @author dell
+ * @author DELL
  */
 public class UserControlPanel extends javax.swing.JFrame {
 
     /**
      * Creates new form UserControlPanel
      */
+    String luser;
     public UserControlPanel() {
-        initComponents();
+       
     }
-
+    public UserControlPanel(String loginUser)
+    {     initComponents();
+        this.luser=loginUser;
+        String getValue=jLabel1.getText();
+        jLabel1.setText(getValue+" :"+loginUser);
+      
+    }
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -39,16 +47,16 @@ public class UserControlPanel extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(412, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(407, 407, 407))
+                .addContainerGap(524, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(23, 23, 23))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(171, 171, 171)
+                .addContainerGap()
                 .addComponent(jLabel1)
-                .addContainerGap(171, Short.MAX_VALUE))
+                .addContainerGap(387, Short.MAX_VALUE))
         );
 
         pack();

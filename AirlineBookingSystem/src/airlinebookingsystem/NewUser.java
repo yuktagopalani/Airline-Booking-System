@@ -204,11 +204,14 @@ public class NewUser extends javax.swing.JFrame {
         try
         {
             Class.forName("com.mysql.jdbc.Driver");
+          
             String databaseURL="jdbc:mysql://localhost:3306/airline";
+      
             java.sql.Connection con=DriverManager.getConnection(databaseURL,"root","");
             java.sql.Statement stat=con.createStatement();
             
             String selectQuery = "select count(*) from user_details where username='"+username+"' and password='"+password+"'";
+           
             ResultSet rs=stat.executeQuery(selectQuery);
             if(!rs.next()){
                 infoMessage("Already registered","Welcome!!");
@@ -230,7 +233,7 @@ public class NewUser extends javax.swing.JFrame {
             
         }
         catch(Exception e)
-        {
+        {  
             System.out.println(e);
         }
     }//GEN-LAST:event_jButton1ActionPerformed
