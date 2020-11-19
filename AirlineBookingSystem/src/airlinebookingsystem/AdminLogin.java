@@ -161,6 +161,7 @@ public class AdminLogin extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        
          String username=adminuserTF.getText();
         String password=adminpassPF.getText();
         try
@@ -173,7 +174,7 @@ public class AdminLogin extends javax.swing.JFrame {
             java.sql.Statement stat=con.createStatement();
                String selectQuery = "select count(*) from admin_details where username='"+username+"' and password='"+password+"'";
               ResultSet rs=stat.executeQuery(selectQuery);
-              if(!rs.next())
+              if(rs.next())
               {
                   //infoMessage("Welcome......","Alert");
                   dispose();
