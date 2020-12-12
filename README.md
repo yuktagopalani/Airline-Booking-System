@@ -1,21 +1,10 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h1>Abstract</h1>
+<h1>How to run the project</h1>
 <p>
-The main objective of this application is to decrease the manual mistakes engaged in the
-commercial airline booking process and create it practical for the clients to book the routes as
-when they require such that they can implement this application to create bookings, change
-bookings or terminate a particular booking.
-The name of the application is “AIRLINE BOOKING SYSTEM”. This application provides
-alternatives for watching different routes available with different timings for a particular time
-frame and provides clients with the service to publication a admission, change or terminate a
-particular reservation but it does not offer the clients with information of price of the admission
-and it does not allow the client to alter a particular aspect of his reservation and he/she can
-change all his information. The software keep generating timely message regarding schedule
-related updates to users.
+Download the xampp server in the pc (if you don't have one). Then also download the mysql jarfiles for netbeans, and insert these files under liberaries section in netbeans.Also insert the jcalender jar file into it. start the xampp server and start making the mysql database through php-myadmin.
 </p>
-
 <h1>Specific Technology</h1>
 <p>Java, Applet</p>
 <h1>Project Tasks</h1>
